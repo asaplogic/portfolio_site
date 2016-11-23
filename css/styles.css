@@ -1,0 +1,308 @@
+body{
+    margin-top: 50px;
+}
+
+.navbar{
+  opacity: .9;
+  margin-top: 0;
+  padding-bottom: 1em;
+}
+/*----------------------
+nav stroke
+---------------------*/
+nav.navbar ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.navbar ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background:  #FA4D19;
+  height: 1px;
+}
+nav.navbar ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+/* responsive images
+------------------------- */
+
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+.footer_name{
+font-weight: lighter;
+font-size: x-large
+}
+.fname{
+font-weight: lighter;
+font-size: x-large;
+
+}
+
+.lname{
+font-size: x-large;
+
+}
+
+
+/* Featurettes
+------------------------- */
+.self-image{
+  border-radius: 50%;
+  margin-top: 3em;
+  
+  
+}
+
+
+.container{ /* controls text block after image*/
+   
+    text-align: center;
+     max-width: 80em;
+}
+
+.hero-featurette{
+  max-width:100em;
+  margin: auto;
+  margin-top: 4em;
+}
+
+.featurette-divider {
+  width: 5em;
+  margin-top: 1em;
+  float: left;
+
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  font-size: 30px;
+  
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 3em;
+  }
+}
+
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+  	margin-top:30px;
+  	width:228px;
+    
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+}
+/*image pages
+-----------------*/
+.hero-image{
+  width: 100%;
+  
+}
+
+.hero-image img{
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*index page tile
+-----------------*/
+#rig {
+    max-width:1100px;
+    margin:auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:#000;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #3DC0F1 no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.7s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.9;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:25%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+}
+
+
+.work-image{
+	padding-bottom: 2em;
+}
+/*go to top
+-------------------------*/
+
+ .go-top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	padding: 0;
+	display: none;
+	
+}
+.to-top:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+  
+ 
+/*footer
+------------------------- */
+.fa{
+  
+  padding-left: 1em;
+}
+
+.icon-foot{
+  height: 27px;
+}
+
+#footer{
+    margin-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+  
+}
+
+.fa{
+  color: #FA4D19;
+}
+.lead{
+ text-align: center
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Andrew Marogil Portfolio</title>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="https://use.fontawesome.com/3373205085.js"></script>
+
+
+
+
+
+<!--Start Header-->
+</head>
+
+<body class ="container">
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span class="fname">Andrew</span><span class = "lname"> Marogil</span></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="dropdown">
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<!-- /.navbar-collapse -->
+
+<!--End Nav Bar-->
+ 
+<!--featurette 1-->
+  
+  
+  <!--content start-->
+     <div class="contrainer-fluid ">
+      <div class="row">
+        <div class="hero">
+
+          <div class="hero-img">
+            <img src="img/photo-1463003416389-296a1ad37ca0.jpeg" class="img-responsive" alt="Responsive image">
+              <div class="sol-sm-6">
+              <h1 id="text">Hello World!</h1>
+            </div>
+          </div>
+				
+        </div>
+    
+          
+
+            
+
+             <div class="work-image col-md-12">
+                <img  src="img/8.jpg">
+            </div>
+
+            <div class="work-image col-md-9">
+                <img class="rig-img" src="img/1.jpg">
+            </div>
+
+            <div class="work-image col-md-9">
+                <img class="rig-img" src="img/1.jpg">
+            </div>
+
+        
+
+
+            
+						
+
+		  	</div><!--end main content-->
+     </div>
+	</div>
+
+
+<!--footer start-->
+  <footer id="footer">
+    <div class="row">
+      <div class="container">
+        <p class="muted credit"><h3><span class="footer_name">&copy 2016 Andrew Marogil</span></h3>
+          <a href="https://www.linkedin.com/in/andymarogil"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/amarogil/"><i class="fa fa-instagram  fa-lg" aria-hidden="true"></i></a>
+          <a href="mailto:marogil.andy@gmail.com"><i class="fa fa-envelope-o  fa-lg" aria-hidden="true"></i></a>
+        </p>
+
+         <a href="#" class="go-top"><i class="fa fa-angle-up fa-4x" aria-hidden="true"></i></a>
+      </div>
+    </div>
+   
+  </footer>
+<!--end footer-->
+
+<!-- jQuery -->
+<script src="js/jquery-3.1.0.min.js"></script>
+
+<!-- Minified JavaScript -->
+
+<script src="js/bootstrap.min.js"></script>
+<!--go to top js-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+
+<script>
+$(document).ready(function() {
+  
+			// check to see if the window is on top if not then display button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 100) {
+					$('.go-top').fadeIn();
+				} else {
+					$('.go-top').fadeOut();
+				}
+			});
+			
+			// Animate the scroll to top
+			$('.go-top').click(function() {	
+				$('html, body').animate({scrollTop: 0}, 600);
+        return false;
+			})
+		});
+ 
+</script>
+
+</body>
+</html>
